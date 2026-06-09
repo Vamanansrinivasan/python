@@ -1,0 +1,31 @@
+def sq(s):
+    return s * s
+def rect(l,b):
+    return l*b
+def cir(radius):
+    return 3.14 * radius * radius
+def tri(b, h):
+    return 0.5 * b * h
+print("1. SQUARE")
+print("2. RECTANGLE")
+print("3. CIRCLE")
+print("4. TRIANGLE")
+ch = int(input("Enter any shape: "))
+if ch == 1:
+    s= int(input("Enter the side: "))
+    area = sq(s)
+    print("Area of Square =", area)
+if ch == 2:
+    l = int(input("Enter the Length: "))
+    b = int(input("Enter the Breadth: "))
+    area = rect(l, b)
+    print("Area of Rectangle =", area)
+if ch == 3:
+    r = int(input("Enter the radius: "))
+    area = cir(r)
+    print("Area of Circle =", area)
+if ch == 4:
+    b = int(input("Enter the base: "))
+    h = int(input("Enter the height: "))
+    area = tri(b, h)
+    print("Area of Triangle =", area)
