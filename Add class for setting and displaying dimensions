@@ -1,0 +1,11 @@
+class abc:
+    def set_dim(self):
+        a=int(input("Enter the number:"))
+        b=int(input("Enter the number:"))
+        self.l=a
+        self.b=b
+    def display(self):
+        print(self.l+self.b)
+a1=abc()
+a1.set_dim()
+a1.display()
