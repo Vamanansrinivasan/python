@@ -1,0 +1,10 @@
+a=int(input("Enter Number:"))
+b=int(input("Enter Number:"))
+big=max([a,b])
+s=big
+while(True):
+    if big%a==0 and big%b==0:
+        break
+    else:
+        big=big+s
+print(big)
